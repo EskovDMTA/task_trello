@@ -3,5 +3,5 @@ require_relative '../config/environment'
 require 'rails/test_help'
 
 class ActiveSupport::TestCase
-  include FActoryBot::Syntax::Methods
+  include FactoryBot::Syntax::Methods
 end
