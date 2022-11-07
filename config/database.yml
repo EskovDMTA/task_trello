@@ -7,11 +7,11 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV['DATABASE_NAME'] || 'trello_development' %>
+  database: <%= ENV['DATABASE_NAME'] || 'task_trello_development' %>
 
 test:
   <<: *default
-  database: trello_test
+  database: task_trello_test
   port: <%= (ENV['CI_NAME'] == 'codeship') ? 5433 : 5432 %>
 
 production:

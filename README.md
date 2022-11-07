@@ -1,3 +1,1 @@
-# README
-
-Task Manager Trello 
+Task Manager Trello
