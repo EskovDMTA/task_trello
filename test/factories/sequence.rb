@@ -7,7 +7,8 @@ FactoryBot.define do
     "person#{n}@example.com"
   end
 
-  sequence :state, ['new_task', 'in_development', 'in_qa', 'in_code_review', 'ready_for_release', 'released', 'archived'].cycle
+  sequence :state,
+           %w[new_task in_development in_qa in_code_review ready_for_release released archived].cycle
 
   sequence :expired_at do |n|
     Date.current + n.days
